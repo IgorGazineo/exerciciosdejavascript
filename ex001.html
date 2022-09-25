@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 2em;
+        }
+        a{
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            display: inline;
+            text-decoration: none;
+            background-color: gainsboro;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-size: 1.1em;
+            transition: font-size .2s ease;
+        }
+
+        div {
+            margin-top: 100px;
+        }
+    </style>
+    
+</head>
+<body> 
+    
+
+    <div><a href="index.html">Voltar</a></div>
+    
+    <script>
+        nome = prompt('Digite o seu nome:')
+        alert(`Olá, ${nome}, seja bem-vindo(a) a nossa lista de exercícios em Javascript!`)
+        document.write(`<br>Olá <strong> ${nome} </strong>, seja bem-vindo(a) a nossa lista de exercícios em Javascript! <br>`)
+    </script>
+</body>
+</html>

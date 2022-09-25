@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+:root {
+    --font-titulo-1: 'Source Code Pro', monospace;
+    --font-padrao: 'Source Code Pro', monospace;
+    --font-game: 'Nabla', cursive;
+
+    --color1: #41F28E;
+    --color2: #262840;
+    --color3: #010326;
+    --color4: #040FD9;
+    --color5: #F2F2F2;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--color3);
+}
+
+#cabecalho {
+    background-color: var(--color4);
+    height: 150px;
+    display: flex;
+    
+}
+
+#titulo-cabecalho {
+    background-color: transparent;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+#cabecalho h1 {
+   font: normal 3em var(--font-game);
+   
+}
+
+nav {
+ background-color: var(--color2);
+ height: 60px;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ margin: 0px 0px 30px 0px;
+
+ 
+}
+nav a {
+    color: var(--color1);
+    font: bolder 1.2em var(--font-padrao);
+    padding: 10px ;
+    height: 20px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+    
+    
+    
+}
+
+nav a:hover {
+    background-color: var(--color5);
+    border-radius: 10px;
+}
+
+main {
+    min-width: 280px;
+    max-width: 800px;
+    margin: 20px auto;
+   
+}
+
+main #conteudo {
+    background-color: var(--color5);
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+main h1 {
+    font-family: var(--font-titulo-1);
+    color: var(--color4);
+    font-size: 2em;
+    padding: 20px;
+}
+
+main h2 {
+    background-color: #262840;
+    border-radius: 10px;
+    max-width: 200px;
+    text-align: center;
+    font-family: var(--font-titulo-1);
+    color: var(--color1);
+    font-size: 1.5em;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+main img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+main ol {
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 100px;   
+}
+
+ main li {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 5px;
+    
+ }
+
+ main a {
+    background-image: linear-gradient(90deg, var(--color3), var(--color4));
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 0% 5px;
+    transition: background-size 0.2s ease;
+    padding: 5px;
+    color: var(--color3);
+    
+ }
+
+ main a:hover {
+    background-size: 100% 5px;
+    color: var(--color4);
+ }
+
+
+
