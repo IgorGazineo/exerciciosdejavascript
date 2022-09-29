@@ -15,32 +15,45 @@
             display: inline;
             text-decoration: none;
             background-color: gainsboro;
-            padding: 10px;
+            padding: 5px;
             border-radius: 5px;
             border: 1px solid black;
         }
         a:hover{
             text-decoration: underline;
-            font-size: 1.1em;
-            transition: font-size .2s ease;
+            background-color: rgb(76, 76, 252);
+            
+            
         }
-
+        #btn {
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #btn:hover {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            
+        }
         div {
-            margin-top: 100px;
+            max-width: 200px;
+            margin: 100px auto;
         }
     </style>
     
 </head>
 <body> 
     
-
+    <div><button id="btn" onclick="ex001()" >Ver desafio</button></div>
     <div><a href="index.html">Voltar</a></div>
     
     <script>
+       function ex001() {
+        btn = document.getElementById('btn')
         confirm('Desafio-01 - Tente reproduzir o desafio a seguir... ')
         nome = prompt('Digite o seu nome:')
         alert(`Olá ${nome}! Seja bem-vindo(a) a nossa lista de exercícios em Javascript!`)
-        
+        }
     </script>
 </body>
 </html>
